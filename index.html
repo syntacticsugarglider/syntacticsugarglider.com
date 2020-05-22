@@ -94,11 +94,73 @@
     </script>
 
     <style>
+        @media only screen and (max-width: 400px) {
+            .bottom {
+                display: none !important;
+            }
+
+            .page {
+                transform: scale(0.8);
+                width: 268.38px !important;
+            }
+
+            h1 {
+                --font-size: 64px !important;
+            }
+
+            .smallnav {
+                display: initial !important;
+            }
+        }
+
+        @media only screen and (max-width: 460px) {
+            .page {
+                padding-left: 0px !important;
+                padding-right: 0px !important;
+                margin-left: auto;
+                width: 335.47px;
+                margin-right: auto;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            canvas {
+                display: none;
+            }
+
+            #imprint {
+                display: none;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            #currency {
+                display: none;
+            }
+        }
+
         * {
             box-sizing: border-box;
         }
 
         @import url('https://rsms.me/inter/inter.css');
+
+        .smallnav {
+            width: 100%;
+            transform: scale(0.8);
+            display: none;
+        }
+
+        .smallnav * :first-child {
+            margin-left: 0;
+        }
+
+        .navinner {
+            width: 268.38px;
+            margin-left: auto;
+            margin-top: 16px;
+            margin-right: auto;
+        }
 
         html {
             font-size: 16px;
@@ -299,7 +361,6 @@
 </head>
 
 <body>
-
     <div class="page">
         <div class="grid"></div>
 
@@ -322,6 +383,12 @@
             Contains soy. Contains substances known to the state. Refrigerate after
             opening.
         </p>
+
+        <div class="smallnav">
+            <div class="navinner"> <a rel="noopener" target="_blank"
+                    href="https://t.me/syntacticsugarglider">telegram</a><a rel="noopener" target="_blank"
+                    href="https://github.com/syntacticsugarglider">github</a></div>
+        </div>
 
         <h1 id="imprint">🄯 2020</h1>
     </div>
